@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhijeet Ugale Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth;}
+    body {font-family: 'Poppins', sans-serif; background-color: #f0fff4; color: #1b4332;}
+    header, section, footer {padding: 50px 20px; text-align: center;}
+
+    header {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    header .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+      text-align: center;
+    }
+    header h1 {font-size: 3rem; animation: fadeIn 2s ease-in-out;}
+    header p {font-size: 1.2rem; animation: fadeIn 3s ease-in-out;}
+    @keyframes fadeIn {from {opacity: 0;} to {opacity: 1;}}
+
+    h2 {color: #2d6a4f; margin-bottom: 20px;}
+    .section-box {max-width: 800px; margin: auto;}
+    ul {list-style: none;}
+    li::before {content: '✅ '; color: #40916c;}
+
+    .skill {margin-bottom: 20px; text-align: left;}
+    .skill p {margin-bottom: 5px; font-weight: 600;}
+    .bar {
+      background-color: #d8f3dc;
+      border-radius: 25px;
+      overflow: hidden;
+      height: 25px;
+    }
+    .fill {
+      background-color: #40916c;
+      color: white;
+      text-align: right;
+      padding-right: 10px;
+      height: 100%;
+      line-height: 25px;
+      border-radius: 25px;
+      animation: growBar 2s ease-out forwards;
+    }
+    @keyframes growBar {
+      0% {width: 0;}
+      100% {width: var(--width);}
+    }
+
+    .hobbies span {
+      display: inline-block;
+      margin: 10px;
+      font-size: 1.2rem;
+      animation: popIn 1s ease forwards;
+    }
+    @keyframes popIn {
+      0% {opacity: 0; transform: scale(0.5);}
+      100% {opacity: 1; transform: scale(1);}
+    }
+
+    footer {
+      background: #2d6a4f;
+      color: white;
+      padding: 20px;
+    }
+    a {color: #b7e4c7; text-decoration: none;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="formal_photo.jpg" alt="Abhijeet Ugale">
+    <div class="overlay">
+      <h1>Abhijeet Sachin Ugale</h1>
+      <p>IT Engineering Student | DY Patil Institute of Technology, Pune</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="section-box">
+      <p>Hello! I am Abhijeet Ugale, passionate about tech, coding, and creativity. I started my IT Engineering journey in 2024 at Dr. DY Patil Institute of Technology, Pune.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="section-box">
+      <ul>
+        <li>SSC: Bhimashankar English Medium School – 89.77%</li>
+        <li>HSC: Late B.P. Patil Junior College of Science – 86.88%</li>
+        <li>Current: B.E. IT – Dr. D.Y. Patil Institute of Technology, Pune (2024–)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="section-box">
+      <div class="skill"><p>💻 Java</p><div class="bar"><div class="fill" style="width: 100%;">100%</div></div></div>
+      <div class="skill"><p>🌐 HTML</p><div class="bar"><div class="fill" style="width: 100%;">100%</div></div></div>
+      <div class="skill"><p>🎨 CSS</p><div class="bar"><div class="fill" style="width: 80%;">80%</div></div></div>
+      <div class="skill"><p>⚙️ JavaScript</p><div class="bar"><div class="fill" style="width: 80%;">80%</div></div></div>
+      <div class="skill"><p>📊 DSA</p><div class="bar"><div class="fill" style="width: 90%;">90%</div></div></div>
+    </div>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <div class="hobbies">
+      <span>⚽ Playing Football</span>
+      <span>🧳 Traveling & Exploring</span>
+      <span>🌾 Farming</span>
+    </div>
+  </section>
+
+  <section id="location">
+    <h2>📍 My Location</h2>
+    <div class="section-box">
+      <p>Dindori, Taluka Niphad, District Nashik</p>
+      <p><a href="https://maps.app.goo.gl/J4V3PtZhfcEY28mu9" target="_blank">📍 View on Google Maps</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>📞 8237077991 | <a href="https://www.instagram.com/abhijeet.ugale_">Instagram</a></p>
+    <p>Made with ❤️ by Abhijeet</p>
+  </footer>
+
+</body>
+</html>
